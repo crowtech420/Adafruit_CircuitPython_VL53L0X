@@ -137,7 +137,7 @@ class VL53L0X:
     # thread safe!
     _BUFFER = bytearray(3)
 
-    def __init__(self, i2c, address=41, io_timeout_s=0):
+    def __init__(self, i2c, address=24, io_timeout_s=0):
         # pylint: disable=too-many-statements
         self._i2c = i2c
         self._device = i2c_device.I2CDevice(i2c, address)
